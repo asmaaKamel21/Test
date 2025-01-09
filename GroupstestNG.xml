@@ -1,0 +1,36 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+
+<suite name="Todo Application">
+    <groups>
+        <run>
+            <include name="sanity"/>
+
+        </run>
+    </groups>
+
+    <test name="greeting test">
+        <classes>
+            <class name="Main_Inheritor"/>
+            <class name="NameTest"/>
+            <class name="NameTest2"/>
+            <class name="ExecutionOrder"/>
+        </classes>
+    </test>
+
+    <test name="Test 1">
+        <classes>
+            <class name="TestOne"/>
+        </classes>
+    </test>
+
+
+    <test name="Test 2 ">
+        <classes>
+            <class name="TestTwo">
+
+            </class>
+        </classes>
+    </test>
+
+</suite>
